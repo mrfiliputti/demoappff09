@@ -1,6 +1,6 @@
 param location string = resourceGroup().location
 param webAppName string = 'sampleapp1ff' // Generate unique String for web app name
-param sku string = 'S2' // The SKU of App Service Plan
+param sku string = 'S1' // The SKU of App Service Plan
 param linuxFxVersion string = 'DOTNETCORE|6.0' // The runtime stack of web app
 var appServicePlanName = toLower('AppServicePlan-${webAppName}')
 var webSiteName = toLower('wapp-${webAppName}')
